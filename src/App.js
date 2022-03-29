@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import FetchMovie from './component/movieslist/movies';
+import Search from './component/search/search';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <nav className="navbar">
+      <span className="logo">MyTestApp</span>
+    </nav>
+    <section className="hero-containers">
+     <div className="contents">
+     <h1>Watch something incredible.</h1>
+     </div>
+    </section>
+    
+      <Search/>
+  
+       <h1>Action</h1>
+       <div className="movies-row">
+            <FetchMovie/>
+      </div>
+
+       <h1>Action</h1>
+       <div className="movies-row">
+            <FetchMovie/>
+      </div>
     </div>
   );
 }
